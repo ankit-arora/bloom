@@ -68,7 +68,7 @@ import (
 	"io"
 	"math"
 
-	"github.com/bits-and-blooms/bitset"
+	"github.com/ankit-arora/bitset"
 )
 
 // A BloomFilter is a representation of a set of _n_ items, where the main

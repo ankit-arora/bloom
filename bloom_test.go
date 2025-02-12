@@ -1,15 +1,15 @@
 package bloom
 
 import (
-	"fmt"
 	"bytes"
 	"encoding/binary"
 	"encoding/gob"
 	"encoding/json"
+	"fmt"
 	"math"
 	"testing"
 
-	"github.com/bits-and-blooms/bitset"
+	"github.com/ankit-arora/bitset"
 )
 
 // This implementation of Bloom filters is _not_
@@ -315,9 +315,8 @@ func TestMarshalUnmarshalJSON(t *testing.T) {
 	}
 }
 
-
 func TestMarshalUnmarshalJSONValue(t *testing.T) {
-	f:= BloomFilter{1000, 4, bitset.New(1000)}
+	f := BloomFilter{1000, 4, bitset.New(1000)}
 	data, err := json.Marshal(f)
 	if err != nil {
 		t.Fatal(err.Error())

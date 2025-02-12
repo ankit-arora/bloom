@@ -1,8 +1,8 @@
-module github.com/bits-and-blooms/bloom/v3
+module github.com/ankit-arora/bloom
 
-go 1.16
+go 1.23.3
 
 require (
-	github.com/bits-and-blooms/bitset v1.19.1
-	github.com/twmb/murmur3 v1.1.6
+	github.com/ankit-arora/bitset v0.0.0-20250212073004-6a047aa1a9a0
+	github.com/twmb/murmur3 v1.1.8
 )
